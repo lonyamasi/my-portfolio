@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <input type="checkbox" id="check" style="display:none;">
+
+        <label for="check" class="mobile-toggle">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <div class="sidebar">
+            <label for="check" class="close-btn">
+                <i class="fa fa-times"></i>
+            </label>
+           
+            <center>
+                <img src="images/about3.png" class ="profile-img" alt="">  
+            </center>
+            <a href="#home"><i class="fa fa-home"></i><span>Home</span></a>
+            <a href="#profile"><i class="fa fa-female"></i><span>Profile</span></a>
+            <a href="#portfolio"><i class="fa fa-table"></i><span>Projects</span></a>
+            <a href="#contact"><i class="fa fa-phone-square"></i><span>Contact</span></a>
+            <a href="images/Lyndah Onyamasi CV.pdf" download="Lynda_Onyamasi.pdf">
+                <i class="fa fa-download"></i>
+                <span>Resume</span>
+              </a>
+            
+        </div>
+ 
+    
+
+    <!-- -------------------about----------------- -->
+    <div class="main-content">
+        <div class="content-section">
+        <div class="header-text" id="home">
+            <p class="intro">Hi, my name is</p>
+            <h1>Lyndah Atyang <br><span>I love artistry, the web artistry</span></h1>
+            <p class="intro-2">I believe, being able to create,regardless of the platform,is art.I’m a self-taught software programmer, passionate about creating impactful digital experiences. As an entry-level developer, I’m constantly learning and evolving my skills in software development. 
+                I also take pride in sharing my knowledge as an educator at Chi Code Lab, where I guide and mentor the next generation of young programmers. My focus is on empowering others to explore the world of coding
+                 and technology.</p>   
+            <p class="btn-container"><a href="https://www.instagram.com/chi.codelab/" target="_blank" class="btn">Check out ChiCodeLab</a></p>
+        </div>
+        </div>
+
+<!-- ------------------------------profile-------------------- -->
+        <div class="content-section">
+            <div id="profile">
+                
+                    
+                <div class="about-1">
+                    <h1 class="sub-title" >Profile</h1>
+                           
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Scratch Programming</span><br>Block-based coding – Teaching beginners programming concepts using Scratch.<br>
+                                        Game development – Creating interactive animations and games.<br>
+                                        Educational projects – Helping kids understand computational thinking and problem-solving through visual programming.</li>
+                            <li><span>Frontend-Dev</span><br>React.js – Building dynamic and interactive web applications with reusable components.
+                                        <br>HTML5 – Structuring web pages with semantic markup.
+                                        <br>CSS3 – Styling and responsive design with Flexbox, Grid, and animations.</li>
+                            <li><span>Backend Dev</span><br>Django – Developing scalable and secure backend systems using Python.
+                                                                <br>Node.js – Building fast, event-driven server applications with Express.js.</li>
+                            <li><span>Languages</span><br>HTML & CSS – Core technologies for web development, structuring, and styling.
+                                                              <br>Python – Used for backend development, scripting, and data processing.
+                                                              <br>JavaScript (ES6+) – Modern JavaScript features, including async programming, modules, and ES6 syntax.</li>
+                            <li><span>Databases</span><br>Relational Databases (MySQL, PostgreSQL) – Designing structured database schemas, writing queries,and ensuring data integrity.</li>
+                                    
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023- Current</span><br>Educator at Chi code Lab, an after-school coding program for students ages 8 to 18</li>
+                            <li><span>2022 - Current</span><br>Self Learning Web development, Youtube, Freecodecamp</li>
+                            <li><span>2018-2022</span><br>Freelancing, Data visualization projects</li>
+                            <li><span>2014-2018</span><br>QA/QC specialist at a Pharma</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Feb 2025-present</span><br>PLP Academy, software development</li>
+                            <li><span>2009-2012</span><br>JKUAT-Bsc. Mathematics & Chemistry</li>
+                            <li><span>2004-2007</span><br>Kolanya Girls Highschool</li>
+                        </ul>
+                    </div>
+                </div>
+                        
+              
+            </div>
+        
+        </div>
+
+        <!-- ---------------------------projects--------------- -->
+        <div class="content-section">
+            <div id="portfolio">
+                <h1 class="sub-title">My Projects</h1>
+                    
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/pizzaImage.jpg" alt="">
+                        <div class="layer">
+                            <h3>Pizza order/billing system (ongoing)</h3>
+                            <p> The pizza billing system, takes in order(s) and returns the sub amount, VAT charge and total amount</p>
+                            <a href="https://github.com/lonyamasi/pizza-palace/tree/main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/analyticsimage.jpg" alt="">
+                        <div class="layer">
+                            <h3>Freelance analytics- data Viz</h3>
+                            <p> Creating visualizations to provide insights on various public data</p>
+                            <a href="https://public.tableau.com/app/profile/lyndah.onyamasi/vizzes"   target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/onlinelearning.jpg" alt="">
+                        <div class="layer">
+                            <h3>An lms that introduces kids(K-12) to programming(ongoing)</h3>
+                            <p> Creating a low bandwidth learning management system for Chi code lab to provide tech ed to marginalized students</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/lonyamasi" class = "work-btn">See more</a>
+    
+            </div>
+
+
+
+<!-- ------------------form------------------------ -->
+        </div>
+        <div class="content-section" id="contact">
+            <div class="form">
+                <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    Are you impressed, dont hesitate to contact me!
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                    <i class="fa fa-location-arrow"></i>
+                        <p>Olive Business Centre, Kitengela</p>
+                        </div>
+                    <div class="information">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <p>lonyamasi@gmail.com</p>
+                    </div>
+                    <div class="information">
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                        <p>+254 725879804</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Connect with me :</p>
+                    <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100090355249166" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://github.com/lonyamasi" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/chi.codelab/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lyndah-atyang-onyamasi-b5248859/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="contact-form">
+                
+
+                <form action="index.html" autocomplete="off">
+                    <h3 class="title">Contact Me</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" placeholder="Username"/>
+                        
+                    </div>
+                        <div class="input-container">
+                        <input type="email" name="email" class="input"  placeholder="Email" />
+                       
+                    </div>
+                        <div class="input-container">
+                        <input type="tel" name="phone" class="input"  placeholder="Phone number" />
+                        
+                    </div>
+                        <div class="input-container textarea">
+                        <textarea name="message" class="input"  placeholder="Message"></textarea>
+                        
+                    </div>
+                    <input type="submit" value="Send" class="form-btn" />
+                </form>
+                </div>
+            </div>
+            </div>
+    
+    <footer class="portfolio-footer">
+        <div class="footer-container">
+       
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Lyndah A Onyamasi. All rights reserved.</p>
+        
+            </div>
+        </div>
+
+    </footer>
+   
+    
+</body>
+
+<script>
+    let tablinks = document.getElementsByClassName('tab-links');
+    let tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+
+</script>
+</html>
